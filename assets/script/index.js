@@ -2,4 +2,4 @@
 
 const year = document.querySelector('.year');
 
-year = new Date().getFullYear();
+year.innerText = new Date().getFullYear();
