@@ -40,7 +40,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 header {
-  background-color: var(--app-header-footer);
+  background-color: transparent;
 }
 
 header .flex {
