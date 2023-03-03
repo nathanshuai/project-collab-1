@@ -17,9 +17,8 @@ body {
   --app-blue: #3c57ff;
   --app-blue-hover: #364ee6;
   --app-white: #fff;
-  --app-background-color: #d9d9d9;
-  --app-header-footer: #c0c0c0;
-  --app-header-text: #242526;
+  --app-background-color: #1a1d28;
+  --app-header-footer: #101219;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -40,7 +39,7 @@ header .flex {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  color: var(--app-header-text);
+  color: var(--app-white);
   font-weight: 600;
   line-height: 50px;
 }
@@ -60,7 +59,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--app-header-text);
+  color: var(--app-white);
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
