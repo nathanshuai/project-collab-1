@@ -45,6 +45,10 @@ header .flex {
   line-height: 50px;
 }
 
+nav {
+  height: 50px;
+}
+
 nav ul {
   list-style: none;
   font-size: 0;
