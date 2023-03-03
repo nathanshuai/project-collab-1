@@ -27,7 +27,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 header {
-  background-color: transparent;
+  background-color: var(--app-header-footer);
 }
 
 header .flex {
@@ -40,7 +40,7 @@ header .flex {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  color: var(--app-white);
+  color: var(--app-header-text);
   font-weight: 600;
   line-height: 50px;
 }
@@ -60,7 +60,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--app-white);
+  color: var(--app-header-text);
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
@@ -79,15 +79,6 @@ nav ul li + li {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-main .hero-banner {
-  background-image: url(../image/hero-banner.jpg);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  height: calc(100vh - 50px);
-  place-content: center;
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer
