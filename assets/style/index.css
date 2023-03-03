@@ -19,11 +19,58 @@ body {
   --app-white: #fff;
   --app-background-color: #d9d9d9;
   --app-header-footer: #c0c0c0;
+  --app-header-text: #242526;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Header
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+  background-color: transparent;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.title h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: var(--app-header-text);
+  font-weight: 600;
+  line-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+} 
+
+nav ul li {
+  display: inline;
+  line-height: 50px;
+}
+
+nav ul li a {
+  color: var(--app-header-text);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--app-blue-hover);
+}
+
+nav ul li + li {
+  margin-left: 20px;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Main
