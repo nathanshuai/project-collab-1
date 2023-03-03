@@ -120,6 +120,94 @@ main .social-media a i {
   font-size: 60px;
 }
 
+form {
+  margin-top: 20px;
+  font-size: 0;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+}
+
+.user input[type=text] {
+  width: 320px;
+  height: 46px;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 50px;
+  padding: 0 15px 0 38px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--app-white);
+  background: rgb(255 255 255 / 0.1) url(../image/user.png) no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+input[type=text]:focus {
+  border-color: rgb(255 255 255 / 0.3);
+}
+
+input[type=button] {
+  margin: 12px;
+  width: 120px;
+  height: 46px;
+  background-color: var(--app-blue);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--app-white);
+  transition: background-color 0.25s ease-in-out;
+  text-transform: uppercase;
+}
+
+input[type=button]:hover {
+  background-color: var(--app-blue-hover);
+}
+
+.phone input[type=text] {
+  width: 320px;
+  height: 46px;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 50px;
+  padding: 0 15px 0 38px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--app-white);
+  background: rgb(255 255 255 / 0.1) url(../image/phone.png) no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.mail input[type=text] {
+  width: 320px;
+  height: 46px;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 50px;
+  padding: 0 15px 0 38px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background: rgb(255 255 255 / 0.1) url(../image/mail.png) no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.zip input[type=text] {
+  width: 320px;
+  height: 46px;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 50px;
+  padding: 0 15px 0 38px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background: rgb(255 255 255 / 0.1) url(../image/home.png) no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
