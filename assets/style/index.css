@@ -40,7 +40,7 @@ header .flex {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  color: var(--app-header-text);
+  color: var(--app-white);
   font-weight: 600;
   line-height: 50px;
 }
@@ -60,7 +60,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--app-header-text);
+  color: var(--app-white);
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
