@@ -20,7 +20,21 @@ body {
   --app-background-color: #d9d9d9;
   --app-header-footer: #c0c0c0;
   --app-header-text: #242526;
+  --app-main-hero-banner-color: #fff;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Body
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+body {
+  background-image: url(../image/hero-banner.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Header
@@ -79,14 +93,14 @@ nav ul li + li {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-main .hero-banner {
-  background-image: url(../image/hero-banner.jpg);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+main .hero-banner p {
+  color: var(--app-main-hero-banner-color);
   display: grid;
-  height: calc(100vh - 50px);
+  font-size: 30px;
+  height: 100vh;
   place-content: center;
+  text-align: center;
+  text-shadow: 0px 0px 3px #000;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
