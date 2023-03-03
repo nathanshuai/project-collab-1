@@ -7,3 +7,12 @@ const phone = document.querySelector('.phone');
 const message = document.querySelector('.message');
 
 year.innerText = new Date().getFullYear();
+
+function isEmpty(str) {
+  let a = str.trim();
+
+  if (str.length > 0) {
+    return true
+  }
+  return false
+}
