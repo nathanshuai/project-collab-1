@@ -79,6 +79,20 @@ nav ul li + li {
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+main .social-media {
+  font-size: 0px;
+}
+
+main .social-media .box {
+  height: 300px;
+  border: 1px solid #fff;
+  width: 200px;
+}
+
+main .social-media a i {
+  font-size: 60px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
