@@ -164,19 +164,25 @@ input[type=text] {
 }
 
 .name input[type=text] {
-  background: rgb(255 255 255 / 0.1) url(../image/user.png) no-repeat 16px 13px;
+  background: 
+    rgb(255 255 255 / 0.1) url(../image/user.png) 
+    no-repeat 16px 13px;
   background-size: 17px;
   transition: background-color 0.25s ease-in-out;
 }
 
 .mail input[type=text] {
-  background: rgb(255 255 255 / 0.1) url(../image/mail.png) no-repeat 16px 13px;
+  background: 
+    rgb(255 255 255 / 0.1) url(../image/mail.png) 
+    no-repeat 16px 13px;
   background-size: 17px;
   transition: background-color 0.25s ease-in-out;
 }
 
 .phone input[type=text] {
-  background: rgb(255 255 255 / 0.1) url(../image/phone.png) no-repeat 16px 13px;
+  background:
+   rgb(255 255 255 / 0.1) url(../image/phone.png) 
+   no-repeat 16px 13px;
   background-size: 17px;
   transition: background-color 0.25s ease-in-out;
 }
@@ -185,7 +191,15 @@ input[type=text] {
   background: rgb(255 255 255 / 0.1);
   background-size: 17px;
   transition: background-color 0.25s ease-in-out;
+  height: 100px;
+  border-radius: 20px;
 }
+
+.reset {
+  background-color: transparent;
+}
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer
