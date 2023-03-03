@@ -211,6 +211,14 @@ input[type=button]:hover {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+  background-color: var(--app-header-footer);
+  color: var(--app-footer-color);
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Media Queries
