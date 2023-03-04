@@ -26,12 +26,7 @@
 
 body {
   background-color: var(--app-background-color);
-  background-image: url(../image/hero-banner.jpg);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: 15px;
-  height: 100vh;
 }
 
 
@@ -92,6 +87,15 @@ nav ul li + li {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main .hero-banner {
+  background-image: url(../image/hero-banner.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+
 main .hero-banner p {
   color: var(--app-main-hero-banner-color);
   display: grid;
