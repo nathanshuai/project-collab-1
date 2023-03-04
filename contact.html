@@ -32,34 +32,21 @@
     </header>
     <main>
       <div class='container'>
-        <div class='form'>
-          <div class='name'>
-            <form>
-              <input type='text' placeholder='Name' required>
-            </form>
-          <div class='email'>
-            <form>
-              <input type='text' placeholder='E-Mail' required>
-            </form>
-          </div>
-          <div class='phone'>
-            <form>
-              <input type='text' placeholder='Phone Number' required>
-            </form>
-          </div>
-          </div>
-          <div class='text-box'>
-            <form>
-              <input type='text' placeholder='Message' required>
-            </form>
-          </div>
-          <div class='buttons'>
-            <form>
-              <input type='button' class='reset' value='Reset'>
-              <input type='submit' class='submit' value='Submit'>
-            </form>
-          </div>
-        </div>
+        <section>
+          <h2>Contact Us</h2>
+          <form>
+            <div class='center'>
+            <input type='text' id='name' placeholder='Name' class='name' required>
+            <input type='email' id='email' placeholder='E-mail' class='email' required>
+            <input type='tel' id='phone' placeholder='Phone' class='phone' required>
+            <textarea></textarea>
+            <div class='flex'>
+              <input type='reset' value='Clear' class='clear'>
+              <input type='button' value='Send' class='send'>
+            </div>
+            </div>
+          </form>
+        </section>
         <section>
           <h2>Social Media</h2>
           <div class='flex social-media'>
