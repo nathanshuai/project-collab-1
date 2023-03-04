@@ -168,7 +168,7 @@ input[type=text]:focus {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-input[type=button], input[type=button] {
+input[type=button], input[type=submit] {
   margin: 12px;
   width: 120px;
   height: 46px;
