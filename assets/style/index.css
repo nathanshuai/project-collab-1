@@ -112,6 +112,11 @@ section > p {
   margin-top: 20px;
 }
 
+h3 {
+  margin-top: 45px;
+  color: #101219;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
