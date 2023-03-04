@@ -60,45 +60,52 @@ body {
 
 header {
   background-color: var(--app-header-footer);
-  font-size: 0px;
-  height: 50px;
-  line-height: 50px;
 }
 
 header .flex {
   display: flex;
   justify-content: space-between;
+  height: 50px;
 }
 
 .title h1 {
-  color: var(--app-white);
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+  font-size: 24px;
   text-transform: uppercase;
-  text-shadow: 0px 0px 2px #000;
-  word-spacing: 2.5px;
+  letter-spacing: 0.2px;
+  color: var(--app-white);
+  font-weight: 600;
+  line-height: 50px;
 }
+
+nav {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+} 
 
 nav ul li {
   display: inline;
-}
-
-nav ul li + li {
-  margin-left: 15px;
+  line-height: 50px;
 }
 
 nav ul li a {
   color: var(--app-white);
-  font-size: 20px;
-  letter-spacing: 0.25px;
+  font-size: 17px;
+  font-weight: 600;
   text-decoration: none;
-  text-shadow: 0px 0px 2px #000;
+  letter-spacing: 0.2px;
   transition: color 0.25s ease-in-out;
 }
 
 nav ul li a:hover {
   color: var(--app-blue-hover);
+}
+
+nav ul li + li {
+  margin-left: 20px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -161,7 +168,7 @@ input[type=text]:focus {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-input[type=button] {
+input[type=button], input[type=submit] {
   margin: 12px;
   width: 120px;
   height: 46px;
@@ -175,7 +182,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-input[type=button]:hover {
+input[type=button]:hover, input[type=submit]:hover {
   background-color: var(--app-blue-hover);
 }
 
