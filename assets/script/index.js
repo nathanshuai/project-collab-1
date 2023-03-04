@@ -11,7 +11,7 @@ year.innerText = new Date().getFullYear();
 
 send.addEventListener('click', function() {
   // NOT WORKING
-  // nameUser.value.trim();
+  //nameUser.value.trim();
   // email.value.trim();
   // phone.value.trim();
   
@@ -24,15 +24,6 @@ send.addEventListener('click', function() {
     }
   }
 )
-
-// function isEmpty(str) {
-//   let a = str.trim();
-// 
-//   if (str.length > 0) {
-//     return true
-//   }
-//   return false
-// }
 
 const images = document.querySelectorAll('.img');
 
