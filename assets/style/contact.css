@@ -10,6 +10,9 @@
   --app-white: #fff;
   --app-background-color: #1a1d28;
   --app-header-footer: #101219;
+  --fa-github-color: #fff;
+  --fa-linkedin-color: #0a66c2;
+  --fa-twitter-color: #1d9ff6;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -24,6 +27,16 @@
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.fa-github {color: var(--fa-github-color);}
+
+.fa-linkedin {color: var(--fa-linkedin-color);}
+
+.fa-twitter {color: var(--fa-twitter-color);}
+
+.fa-github, .fa-linkedin, .fa-twitter {
+  text-shadow: 0px 0px 2px #000;
 }
 
 .flex {
