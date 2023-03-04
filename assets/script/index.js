@@ -7,6 +7,28 @@ const phone = document.querySelector('.phone');
 const clear = document.querySelector('.clear');
 const send = document.querySelector('.send');
 
+
+
+const images = document.querySelectorAll('.img');
+
+console.log(images)
+
+for (var i = 0; i < images.length; i++) {
+  var image = images[i];
+  var isScaled = false;
+  
+  image.addEventListener('click', function() {
+    if (isScaled) {
+      this.style.transform = "scale(1)";
+      isScaled = false;
+    } else {
+      this.style.transform = "scale(1.2)";
+      isScaled = true;
+    }
+  });
+}
+
+
 year.innerText = new Date().getFullYear();
 
 send.addEventListener('click', function() {
@@ -34,19 +56,3 @@ send.addEventListener('click', function() {
 //   return false
 // }
 
-const images = document.querySelectorAll('.img');
-
-for (var i = 0; i < images.length; i++) {
-  var image = images[i];
-  var isScaled = false;
-  
-  image.addEventListener('click', function() {
-    if (isScaled) {
-      this.style.transform = "scale(1)";
-      isScaled = false;
-    } else {
-      this.style.transform = "scale(1.3)";
-      isScaled = true;
-    }
-  });
-}

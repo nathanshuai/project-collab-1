@@ -175,7 +175,7 @@ hr {
   }
 
   .three {
-      width: 320px;
+      width: 200px;
   }
 }
 
@@ -196,6 +196,7 @@ hr {
 .bthree {
   background-color: #c95c26;
 }
+
 @media (max-width:768px) {
   .bone, .btwo {
       width: calc(50% - 10px);
