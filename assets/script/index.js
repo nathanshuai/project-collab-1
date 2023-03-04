@@ -17,7 +17,3 @@ function isEmpty(str) {
   }
   return false
 }
-
-reset.addEventListener('click', function() {
-  email.value = '';
-});
