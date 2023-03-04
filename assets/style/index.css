@@ -167,6 +167,11 @@ section > p {
   text-align: center;
 }
 
+hr {
+  border: 1px solid rgb(238, 240, 114); 
+  margin: 30px 0; 
+}
+
 @media (max-width:768px) {
   .one, .two {
       width: calc(50% - 10px);
