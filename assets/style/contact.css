@@ -265,20 +265,6 @@ input[type=text]:focus {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-input[type=button], input[type=submit] {
-  margin: 12px;
-  width: 120px;
-  height: 46px;
-  background-color: var(--app-blue);
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  color: var(--app-white);
-  transition: background-color 0.25s ease-in-out;
-  text-transform: uppercase;
-}
-
 input[type=button]:hover, input[type=submit]:hover {
   background-color: var(--app-blue-hover);
 }
