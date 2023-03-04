@@ -18,6 +18,7 @@
   --app-main-hero-banner-color: #fff;
   --app-footer-bg-color: #000;
   --app-footer-color: #fff;
+  --section-bg-color: #30333d;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -99,13 +100,13 @@ main .hero-banner p {
   text-shadow: 0px 0px 3px #000;
 }
 
-section {
-  padding: 20px;
+main section {
+  background-color: var(--section-bg-color);
   border-radius: 20px;
-  background-color: #705548;
-  margin-top: 200px;
   color: #fff;
   font-size: 20px;
+  margin: 40px 0px;
+  padding: 20px 40px;
 }
 
 section > p {
