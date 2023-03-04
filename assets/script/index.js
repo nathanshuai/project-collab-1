@@ -17,3 +17,20 @@ function isEmpty(str) {
   }
   return false
 }
+
+const images = document.querySelectorAll('.img');
+
+for (var i = 0; i < images.length; i++) {
+  var image = images[i];
+  var isScaled = false;
+  
+  image.addEventListener('click', function() {
+    if (isScaled) {
+      this.style.transform = "scale(1)";
+      isScaled = false;
+    } else {
+      this.style.transform = "scale(1.3)";
+      isScaled = true;
+    }
+  });
+}
