@@ -143,7 +143,7 @@ input[type=text]:focus {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-input[type=button] {
+input[type=button], input[type=submit] {
   margin: 12px;
   width: 120px;
   height: 46px;
@@ -157,7 +157,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-input[type=button]:hover {
+input[type=button]:hover, input[type=submit]:hover {
   background-color: var(--app-blue-hover);
 }
 
