@@ -121,7 +121,7 @@ section image {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-  background-color: var(--app-footer-bg-color);
+  background-color: var(--app-header-footer);
   color: var(--app-footer-color);
   height: 100px;
   line-height: 100px;

@@ -1,14 +1,5 @@
 @import url('./reset.css');
 
-.container {
-  margin-inline: auto;
-  width: min(100% - 30px, 1080px);
-}
-
-body {
-  background-color: var(--app-background-color)
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Variables
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -19,6 +10,33 @@ body {
   --app-white: #fff;
   --app-background-color: #1a1d28;
   --app-header-footer: #101219;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Classes
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.center {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+}
+
+.flex {
+  display: flex;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Body
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+body {
+  background-color: var(--app-background-color);
+  color: var(--app-white);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -79,9 +97,124 @@ nav ul li + li {
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+main section {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+  margin: 25px 0px;
+  padding: 40px;
+}
+
+main .social-media {
+  font-size: 0px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+main .social-media a + a {
+  margin-left: 30px;
+}
+
+main .social-media a .box {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+  display: grid;
+  height: 300px;
+  place-content: center;
+  width: 200px;
+}
+
+main .social-media a i {
+  font-size: 60px;
+}
+
+form {
+  margin-top: 20px;
+  font-size: 0;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+}
+
+input[type=text]:focus {
+  border-color: rgb(255 255 255 / 0.3);
+}
+
+input[type=button] {
+  margin: 12px;
+  width: 120px;
+  height: 46px;
+  background-color: var(--app-blue);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--app-white);
+  transition: background-color 0.25s ease-in-out;
+  text-transform: uppercase;
+}
+
+input[type=button]:hover {
+  background-color: var(--app-blue-hover);
+}
+
+input[type=text] {
+  width: 320px;
+  height: 46px;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 50px;
+  padding: 0 15px 0 38px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--app-white);
+}
+
+.name input[type=text] {
+  background: 
+    rgb(255 255 255 / 0.1) url(../image/user.png) 
+    no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.email input[type=text] {
+  background: 
+    rgb(255 255 255 / 0.1) url(../image/mail.png) 
+    no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.phone input[type=text] {
+  background:
+   rgb(255 255 255 / 0.1) url(../image/phone.png) 
+   no-repeat 16px 13px;
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.text-box input[type=text] {
+  background: rgb(255 255 255 / 0.1);
+  background-size: 17px;
+  transition: background-color 0.25s ease-in-out;
+  height: 100px;
+  border-radius: 20px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+  background-color: var(--app-header-footer);
+  color: var(--app-footer-color);
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Media Queries
