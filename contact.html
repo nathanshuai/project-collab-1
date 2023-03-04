@@ -5,7 +5,9 @@
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous' referrerpolicy='no-referrer'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' 
+                           integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' 
+                           crossorigin='anonymous' referrerpolicy='no-referrer'>
     <link rel='stylesheet' href='./assets/style/contact.css'>
     <meta charset='utf-8'>
     <meta name='author' content=''>
@@ -24,7 +26,7 @@
         <nav>
           <ul>
             <li><a href='./index.html'>Home</a></li>
-            <li><a href='#''>Products</a></li>
+            <li><a href='#socials'>Socials</a></li>
             <li><a href='./contact.html'>Contact</a></li>
           </ul>
         </nav>
@@ -61,8 +63,24 @@
           </div>
         </div>
         <section>
-          <h2>Our Social Media</h2>
-          <div class='flex social-media'>
+          <h2>Contact Us</h2>
+          <form>
+            <div class='center'>
+            <input type='text' id='name' placeholder='Name' class='name' required>
+            <input type='email' id='email' placeholder='E-mail' class='email' required>
+            <input type='tel' id='phone' placeholder='Phone' class='phone' required>
+            <textarea></textarea>
+            <div class='flex'>
+              <input type='reset' value='Clear' class='clear'>
+              <input type='button' value='Send' class='send'>
+            </div>
+            </div>
+          </form>
+        </section>
+        <section>
+          <h2>Social Media</h2>
+          <div class='flex social-media' id='socials'>
+            <!-- FAKE LINK -->
             <a href='#"'><div class='box'><i class="fa-brands fa-github"></i></div></a>
             <a href='#"'><div class='box'><i class="fa-brands fa-linkedin"></i></div></a>
             <a href='#"'><div class='box'><i class="fa-brands fa-twitter"></i></div></a>

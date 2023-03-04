@@ -10,6 +10,15 @@
   --app-white: #fff;
   --app-background-color: #1a1d28;
   --app-header-footer: #101219;
+  --fa-github-color: #fff;
+  --fa-linkedin-color: #0a66c2;
+  --fa-twitter-color: #1d9ff6;
+  --section-bg-color: #30333d;
+  --social-media-box-bg-color: #1a1d28;
+  --textarea-bg-color: #1a1d28;
+  --textarea-color: #fff;
+  --button-clear-bg-color: #ccc;
+  --button-send-bg-colro: #0c0;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -24,6 +33,16 @@
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.fa-github {color: var(--fa-github-color);}
+
+.fa-linkedin {color: var(--fa-linkedin-color);}
+
+.fa-twitter {color: var(--fa-twitter-color);}
+
+.fa-github, .fa-linkedin, .fa-twitter {
+  text-shadow: 0px 0px 2px #000;
 }
 
 .flex {
@@ -93,16 +112,110 @@ nav ul li + li {
   margin-left: 20px;
 }
 
+@media (max-width:768px) {
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  .title h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width:480px) {
+nav ul li a {
+  font-size: 10px;
+}
+
+.title h1 {
+  font-size: 18px;
+}
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+form {
+  font-size: 0px;
+}
+
+form input {
+  display: block;
+  margin-top: 15px;
+}
+
+form input[type=text], input[type=tel], input[type=email] {
+  width: 320px;
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  padding: 0px 15px 0px 40px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: border-color 0.25s ease-in-out;
+}
+
+form input[type=text] {
+  background: #1a1d28 url(../image/user.ico)
+  no-repeat 15px 50%;
+  background-size: 18px;
+}
+
+form input[type=tel] {
+  background: #1a1d28 url(../image/tel.ico)
+  no-repeat 15px 12px;
+  background-size: 18px;
+}
+
+form input[type=email] {
+  background: #1a1d28 url(../image/mail.ico)
+  no-repeat 15px 14px;
+  background-size: 18px;
+}
+
+form input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+form textarea {
+  background-color: var(--textarea-bg-color);
+  border-radius: 10px;
+  color: var(--textarea-color);
+  height: 180px;
+  margin-top: 15px;
+  padding: 15px;
+  width: 320px;
+}
+
+form .flex {
+  justify-content: space-between;
+}
+
+form .clear, form .send {
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: all 0.25s ease-in-out;
+}
+
+form .clear:hover, form .send:hover {
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+form .clear {background-color: var(--button-clear-bg-color);}
+
+form .send {background-color: var(--button-send-bg-colro);}
+
 main section {
+  background-color: var(--section-bg-color);
   border: 1px solid #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
-  margin: 25px 0px;
-  padding: 40px;
+  margin: 40px 0px;
+  padding: 20px 40px;
 }
 
 main .social-media {
@@ -111,11 +224,20 @@ main .social-media {
   margin-top: 25px;
 }
 
+main .social-media a {
+  transition: all 0.25s ease-in-out;
+}
+
+main .social-media a:hover {
+  translate: 0px -15px;
+}
+
 main .social-media a + a {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 main .social-media a .box {
+  background-color: var(--social-media-box-bg-color);
   border: 1px solid #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
@@ -219,3 +341,23 @@ footer {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Media Queries
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 720px) {
+  main .social-media {
+    display: grid;
+    place-items: center;
+  }
+  
+  main .social-media a:hover {
+    translate: 15px 0px;
+  }
+  
+  main .social-media a + a{
+    margin: 20px 0px 0px 0px;
+  }
+  
+  main .social-media a .box {
+    height: 150px;
+    width: 150px;
+  }
+}
