@@ -5,6 +5,7 @@ const name = document.querySelector('.name');
 const email = document.querySelector('.email');
 const phone = document.querySelector('.phone');
 const message = document.querySelector('.message');
+const reset = document.querySelector('.reset');
 
 year.innerText = new Date().getFullYear();
 
