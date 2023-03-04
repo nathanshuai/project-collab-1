@@ -10,6 +10,11 @@
   --app-white: #fff;
   --app-background-color: #1a1d28;
   --app-header-footer: #101219;
+  --fa-github-color: #fff;
+  --fa-linkedin-color: #0a66c2;
+  --fa-twitter-color: #1d9ff6;
+  --section-bg-color: #30333d;
+  --social-media-box-bg-color: #1a1d28;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -24,6 +29,16 @@
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.fa-github {color: var(--fa-github-color);}
+
+.fa-linkedin {color: var(--fa-linkedin-color);}
+
+.fa-twitter {color: var(--fa-twitter-color);}
+
+.fa-github, .fa-linkedin, .fa-twitter {
+  text-shadow: 0px 0px 2px #000;
 }
 
 .flex {
@@ -98,6 +113,7 @@ nav ul li + li {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 main section {
+  background-color: var(--section-bg-color);
   border: 1px solid #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
@@ -111,11 +127,20 @@ main .social-media {
   margin-top: 25px;
 }
 
+main .social-media a {
+  transition: all 0.25s ease-in-out;
+}
+
+main .social-media a:hover {
+  translate: 0px -15px;
+}
+
 main .social-media a + a {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 main .social-media a .box {
+  background-color: var(--social-media-box-bg-color);
   border: 1px solid #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
@@ -143,7 +168,7 @@ input[type=text]:focus {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-input[type=button] {
+input[type=button], input[type=submit] {
   margin: 12px;
   width: 120px;
   height: 46px;
@@ -157,7 +182,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-input[type=button]:hover {
+input[type=button]:hover, input[type=submit]:hover {
   background-color: var(--app-blue-hover);
 }
 
