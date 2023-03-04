@@ -246,3 +246,23 @@ footer {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Media Queries
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 720px) {
+  main .social-media {
+    display: grid;
+    place-items: center;
+  }
+  
+  main .social-media a:hover {
+    translate: 15px 0px;
+  }
+  
+  main .social-media a + a{
+    margin: 20px 0px 0px 0px;
+  }
+  
+  main .social-media a .box {
+    height: 150px;
+    width: 150px;
+  }
+}
