@@ -35,14 +35,10 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 header {
-<<<<<<< HEAD
   background-color: var(--app-header-footer);
   font-size: 0px;
   height: 50px;
   line-height: 50px;
-=======
-  background-color: #c94406;
->>>>>>> 1a74752cda99562f788d136a9822ea142d9fe20f
 }
 
 header .flex {
