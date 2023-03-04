@@ -11,7 +11,7 @@ year.innerText = new Date().getFullYear();
 
 send.addEventListener('click', function() {
   // NOT WORKING
-  //nameUser.value.trim();
+  // nameUser.value.trim();
   // email.value.trim();
   // phone.value.trim();
   
