@@ -72,21 +72,24 @@ body {
 
 header {
   background-color: var(--app-header-footer);
+  font-size: 0px;
+  height: 50px;
+  line-height: 50px;
 }
 
 header .flex {
   display: flex;
   justify-content: space-between;
-  height: 50px;
 }
 
 .title h1 {
-  font-size: 24px;
+  font-size: 25px;
   text-transform: uppercase;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
   color: var(--app-white);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 50px;
+  word-spacing: 2.5px;
 }
 
 nav {
@@ -105,10 +108,10 @@ nav ul li {
 
 nav ul li a {
   color: var(--app-white);
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   text-decoration: none;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.25px;
   transition: color 0.25s ease-in-out;
 }
 
