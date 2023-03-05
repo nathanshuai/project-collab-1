@@ -9,6 +9,25 @@ const send = document.querySelector('.send');
 
 year.innerText = new Date().getFullYear();
 
+
+const images = document.querySelectorAll('.img');
+
+for (var i = 0; i < images.length; i++) {
+  var image = images[i];
+  var isScaled = false;
+  
+  image.addEventListener('click', function() {
+    if (isScaled) {
+      this.style.transform = "scale(1)";
+      isScaled = false;
+    } else {
+      this.style.transform = "scale(1.1)";
+      isScaled = true;
+    }
+  });
+}
+
+
 send.addEventListener('click', function() {
   // NOT WORKING
   // nameUser.value.trim();
@@ -25,19 +44,3 @@ send.addEventListener('click', function() {
   }
 )
 
-const images = document.querySelectorAll('.img');
-
-for (var i = 0; i < images.length; i++) {
-  var image = images[i];
-  var isScaled = false;
-  
-  image.addEventListener('click', function() {
-    if (isScaled) {
-      this.style.transform = "scale(1)";
-      isScaled = false;
-    } else {
-      this.style.transform = "scale(1.3)";
-      isScaled = true;
-    }
-  });
-}
