@@ -357,4 +357,8 @@ footer {
     height: 150px;
     width: 150px;
   }
+  
+  footer {
+    height: 200px;
+  }
 }
