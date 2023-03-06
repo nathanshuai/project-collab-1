@@ -17,8 +17,8 @@
   --social-media-box-bg-color: #1a1d28;
   --textarea-bg-color: #1a1d28;
   --textarea-color: #fff;
-  --button-clear-bg-color: #ccc;
-  --button-send-bg-colro: #0c0;
+  --button-clear-bg-color: #a0a0a0;
+  --clear-hover: #878787;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -160,7 +160,7 @@ form input[type=text], input[type=tel], input[type=email] {
   width: 320px;
   height: 46px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 50px;
+  border-radius: 15px;
   padding: 0px 15px 0px 40px;
   font-size: 18px;
   font-weight: 400;
@@ -205,7 +205,9 @@ form .flex {
 }
 
 form .clear, form .send {
-  border-radius: 10px;
+  color: var(--app-white);
+  width: 100px;
+  border-radius: 8px;
   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
   font-size: 20px;
   padding: 5px 10px;
@@ -218,7 +220,7 @@ form .clear:hover, form .send:hover {
 
 form .clear {background-color: var(--button-clear-bg-color);}
 
-form .send {background-color: var(--button-send-bg-colro);}
+form .send {background-color: var(--app-blue);}
 
 main section {
   background-color: var(--section-bg-color);
@@ -276,8 +278,12 @@ input[type=text]:focus {
   border-color: rgb(255 255 255 / 0.3);
 }
 
-input[type=button]:hover, input[type=submit]:hover {
+input[type=button]:hover {
   background-color: var(--app-blue-hover);
+}
+
+input[type=reset]:hover {
+  background-color: var(--clear-hover);
 }
 
 input[type=text] {
