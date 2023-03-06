@@ -105,7 +105,7 @@ main .hero-banner p {
   color: var(--app-main-hero-banner-color);
   display: grid;
   font-size: 50px;
-  height: 100vh;
+  height: calc(100vh - 50px);
   place-content: center;
   text-align: center;
   text-shadow: 0px 0px 3px #000;
@@ -257,28 +257,26 @@ footer {
 /* Media Queries
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-@media (max-width:768px) {
-  nav ul li a {
-    font-size: 15px;
-  }
-
-  .title h1 {
-    font-size: 22px;
-  }
-}
-
 @media (max-width: 720px) {
+  header {
+    height: 100px;
+  }
+  
+  header .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  main .hero-banner {
+    height: calc(100vh - 100px);
+  }
+  
+  main .hero-banner p {
+    font-size: 40px;
+    height: calc(100vh - 100px);
+  }
+  
   footer {
     height: 200px;
   }
-}
-
-@media (max-width:480px) {
-nav ul li a {
-  font-size: 10px;
-}
-
-.title h1 {
-  font-size: 18px;
-}
 }
