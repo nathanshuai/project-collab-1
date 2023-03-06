@@ -104,7 +104,7 @@ main .hero-banner {
 main .hero-banner p {
   color: var(--app-main-hero-banner-color);
   display: grid;
-  font-size: 30px;
+  font-size: 50px;
   height: 100vh;
   place-content: center;
   text-align: center;
