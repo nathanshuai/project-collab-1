@@ -13,12 +13,12 @@
   --app-blue: #3c57ff;
   --app-blue-hover: #364ee6;
   --app-white: #fff;
-  --app-background-color: #1a1d28;
+  --app-background-color: #181b2d;
   --app-header-footer: #101219;
   --app-main-hero-banner-color: #fff;
   --app-footer-bg-color: #000;
   --app-footer-color: #fff;
-  --section-bg-color: #30333d;
+  --section-bg-color: rgba(50, 67, 75, 0.5);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
