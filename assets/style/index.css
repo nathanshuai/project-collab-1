@@ -268,6 +268,10 @@ footer {
 }
 
 @media (max-width: 720px) {
+  main .hero-banner p {
+    font-size: 40px;
+  }
+  
   footer {
     height: 200px;
   }
